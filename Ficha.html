@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="body.css">
+    <title>Ficha de Personagem</title>
+</head>
+<body>
+    <div >
+        <h1 >Ficha de Personagem</h1>
+        <h2>Nome: Ronaldinho Gaúcho</h2>
+        <h3>Classe: Crack show de bola ⚡ | Gols: 356 </h3>
+        <img src="ronaldinho.jpg" alt="">
+        
+        <h4>Atributos Físicos</h4>
+        <ul>
+            <li>Idade: 44 anos</li>
+            <li>Altura: 1,82 </li>
+            <li>Peso: 80 kg</li>
+            <li>Aparência: Sorrisão</li>
+        </ul>
+
+        <h4>Equipamentos</h4>
+        <ul>
+            <li>Chuteira</li>
+            <li>Caneleira</li>
+            <li>Uniforme</li>
+            <li>Tiara</li>
+        </ul>
+
+        <h4>Personalidade</h4>
+        <ul>
+            <li>Traços: Sorrisão , Cabeleira </li>
+            <li>Habilidades: Rei das embaixadinhas</li>
+        </ul>
+
+        <h4>Biografia</h4>
+        <p></p>
+
+        <button id="bioButton">Mostrar Biografia</button>
+       <p id="biografia" style="display:none;">[Ronaldo de Assis Moreira (Porto Alegre, 21 de março de 1980), mais conhecido como Ronaldinho Gaúcho ou simplesmente Ronaldinho, é um ex-futebolista brasileiro que atuava como meio-campista ou ponta-esquerda, amplamente reconhecido como um dos mais talentosos da história.[4][5] Atualmente é embaixador do Barcelona, clube onde fez história.</p>
+
+
+    </div>
+    <script>
+        document.getElementById("bioButton").onclick = function() {
+            var bio = document.getElementById("biografia");
+            if (bio.style.display === "none") {
+                bio.style.display = "block";
+                this.textContent = "Esconder Biografia";
+            } else {
+                bio.style.display = "none";
+                this.textContent = "Mostrar Biografia";
+            }
+        };
+    </script>
+</body>
+</html>
